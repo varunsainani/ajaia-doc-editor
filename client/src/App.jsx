@@ -211,7 +211,9 @@ function App() {
         <section className="sidebar-section history-panel">
           <p className="section-label">Version History</p>
           {history.length === 0 && (
-            <p className="empty-note">No versions yet. Save to create history.</p>
+            <p className="empty-note">
+              No versions yet. Save to create history.
+            </p>
           )}
           {history
             .slice()
@@ -232,7 +234,7 @@ function App() {
         <div className="editor-wrap">
           <div className="editor-header">
             <div>
-              <h1>Ajaia Docs</h1>
+              <h1>DocVault</h1>
               <small className="subtext">Collaborative document editor</small>
             </div>
             <span className="active-indicator">{activeDocLabel}</span>
@@ -256,7 +258,9 @@ function App() {
               onChange={handleFileImport}
               className="hidden-upload"
             />
-            {uploadMessage ? <span className="status-text">{uploadMessage}</span> : null}
+            {uploadMessage ? (
+              <span className="status-text">{uploadMessage}</span>
+            ) : null}
           </div>
 
           <Editor content={content} onChange={handleContentChange} />

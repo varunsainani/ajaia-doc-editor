@@ -1,6 +1,6 @@
-# AJAIA Docs
+# DocVault
 
-AJAIA Docs is a SaaS-style collaborative document editor built with React, TipTap, Express, SQLite, and Socket.IO. It supports personal documents, sharing, live multi-user sync, and version history restore.
+DocVault is a SaaS-style collaborative document editor built with React, TipTap, Express, SQLite, and Socket.IO. It supports personal documents, sharing, live multi-user sync, and version history restore.
 
 ## Features
 
